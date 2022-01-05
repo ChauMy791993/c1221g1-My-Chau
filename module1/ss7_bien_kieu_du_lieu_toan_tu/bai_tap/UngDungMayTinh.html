@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung may tinh</title>
+</head>
+<body>
+  <table>
+    <form>
+      <tr>
+        <td>
+          <input type="number" id="giaTri1">
+        </td>
+        <td>
+          <input type="number" id="giaTri2">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" onclick="s1()"> Addtion(+)</button>
+          <button type="button" onclick="s2()" > subtraction(-)</button>
+        </td>
+        <td>
+          <button type="button" onclick="s3()" > Multiplication(x)</button>
+          <button type="button" onclick="s4()" > Division(/)</button>
+        </td>
+      </tr>
+    </form>
+  </table>
+
+<script>
+  function s1(){
+    let a=parseInt(document.getElementById('giaTri1').value);
+    let b=parseInt(document.getElementById('giaTri2').value);
+    let c=a +b
+    document.write('ketqua='+c)
+  }
+  function s2(){
+    let a=parseInt(document.getElementById('giaTri1').value);
+    let b=parseInt(document.getElementById('giaTri2').value);
+    let c=a-b
+    document.write('ketqua='+c)
+  }
+  function s3(){
+    let a=parseInt(document.getElementById('giaTri1').value);
+    let b=parseInt(document.getElementById('giaTri2').value);
+    let c=a*b
+    document.write('ketqua='+c)
+  }
+  function s4(){
+    let a=parseInt(document.getElementById('giaTri1').value);
+    let b=parseInt(document.getElementById('giaTri2').value);
+    let c=a/b
+    document.write('ketqua='+c)
+  }
+
+
+
+
+</script>
+</body>
+</html>
