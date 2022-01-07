@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <form>
+      <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/5/51/Soccerball_shade.svg" />
+      <p>Click button below to move the image to right</p>
+      <input type="button" value="Click Me" onclick="moveRight()" />
+    </form>
+  <script>
+    let imgBall = null;
+
+    function innt(){
+      imgBall = document.getElementById('myImage')
+      imgBall.style.position= 'relative'
+      imgBall.style.left = '0px';
+    }
+    function moveRight(){
+      imgBall.style.left =parseInt(imgBall.style.left) +10 +'px'
+    }
+
+    window.onload = innt;
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
