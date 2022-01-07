@@ -17,37 +17,37 @@
       </tr>
       <tr>
         <td>
-          <button type="button" onclick="s1()"> Addtion(+)</button>
-          <button type="button" onclick="s2()" > subtraction(-)</button>
+          <button type="button" onclick="cong()"> Addtion(+)</button>
+          <button type="button" onclick="tru()" > subtraction(-)</button>
         </td>
         <td>
-          <button type="button" onclick="s3()" > Multiplication(x)</button>
-          <button type="button" onclick="s4()" > Division(/)</button>
+          <button type="button" onclick="nhan()" > Multiplication(x)</button>
+          <button type="button" onclick="chia()" > Division(/)</button>
         </td>
       </tr>
     </form>
   </table>
 
 <script>
-  function s1(){
+  function cong(){
     let a=parseInt(document.getElementById('giaTri1').value);
     let b=parseInt(document.getElementById('giaTri2').value);
     let c=a +b
     document.write('ketqua='+c)
   }
-  function s2(){
+  function tru(){
     let a=parseInt(document.getElementById('giaTri1').value);
     let b=parseInt(document.getElementById('giaTri2').value);
     let c=a-b
     document.write('ketqua='+c)
   }
-  function s3(){
+  function nhan(){
     let a=parseInt(document.getElementById('giaTri1').value);
     let b=parseInt(document.getElementById('giaTri2').value);
     let c=a*b
     document.write('ketqua='+c)
   }
-  function s4(){
+  function chia(){
     let a=parseInt(document.getElementById('giaTri1').value);
     let b=parseInt(document.getElementById('giaTri2').value);
     let c=a/b
