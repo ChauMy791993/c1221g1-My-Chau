@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính thuế thu nhập</title>
+</head>
+<body>
+    <script>
+        let a= parseInt(prompt('thu nhập hàng tháng'))
+        if (a<=5000000){
+            document.write('sô tiền phải nộp thuế = ' + a * 0.05)
+        }else
+        if (a<=10000000){
+            document.write('sô tiền phải nộp thuế = ' + (250000+a*0.1))
+        }
+        else {
+            document.write('sô tiền phải nộp thuế = ' + (750000+a*0.15))
+        }
+    </script>
+</body>
+</html>

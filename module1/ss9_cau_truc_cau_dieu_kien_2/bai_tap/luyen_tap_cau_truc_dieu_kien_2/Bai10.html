@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tiền điện mỗi tháng</title>
+</head>
+<body>
+    <script>
+        let a= parseInt(prompt('sản lượng kwh'))
+        if (a<=100){
+            document.write('sô tiền trả trong tháng = ' + a * 1600)
+        }else
+            if (a<=200){
+                document.write('sô tiền trả trong tháng = ' + (160000 + 2000*(a-100)))
+            }
+            else {
+            document.write('sô tiền trả trong tháng = ' + (160000 + 200000+ 2500*(a - 200)))
+        }
+
+
+    </script>
+</body>
+</html>
