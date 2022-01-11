@@ -6,7 +6,17 @@
 </head>
 <body>
     <script>
-        let num=prompt('')
+        let num=prompt('nhap so fibonaci muon hien');
+        let f1 = 0;
+        let f2 = 1;
+        let fibonaci;
+        for (let i = 1;i <= num; i++){
+            document.write(f1);
+            document.write("<br>");
+            fibonaci = f1 + f2;
+            f1 = f2;
+            f2 = fibonaci;
+        }
     </script>
 
 </body>
