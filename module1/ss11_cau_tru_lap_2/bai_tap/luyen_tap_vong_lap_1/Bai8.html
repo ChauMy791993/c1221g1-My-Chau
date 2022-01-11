@@ -5,22 +5,32 @@
     <title>Title</title>
 </head>
 <body>
+    <button type="button" onclick="playgame()">chơi</button>
     <script>
-        let phamvi = Number(prompt("Trò chơi đoán số từ 0 - "))
-        let nhapso = Number(prompt("Nhập vào số muốn đoán"))
-        let soRamdom
-        if(phamvi){
-            soRamdom = Math.floor(Math.random()*phamvi)
-            if(soRamdom == nhapso){
-                alert("Bạn đã đoán đung")
-            }else{
-                while (soRamdom != nhapso){
-                    alert("Bạn đoán sai số đúng là "+soRamdom)
-                    nhapso = Number(prompt("Nhập vào số muốn đoán"))
+        function playgame(){
+            let max= prompt('nhap vao gia tri lon nhat cua so can doan');
+            let random= Math.ceil(max*Math.random());
+            let yourNumber;
+            let count=0;
+            do{
+                count++;
+                yourNumber= prompt('nhap so ban can du doan lan thu'+ count);
+                if(yourNumber==random){
+                    alert('ban da win');
+                    break;
+                }else if(yourNumber>random){
+                    alert('so ban nhap lon hon so du doan');
+                }else {
+                    alert('so ban nhap nho hon so du doan');
                 }
-                alert("Bạn đoán đúng")
+                if(count==3){
+                    alert('ban da het so lan du doan');
+                    break;
+                }
             }
+            while (true)
         }
+
 
     </script>
 </body>
