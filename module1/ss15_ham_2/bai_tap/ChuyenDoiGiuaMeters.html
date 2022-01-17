@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Feet</label>
+            <input type="number" id="inputFeet" onchange="doiMeter(this.value)"
+            oninput="doiMeter(this.value)">
+        </p>
+        <p>meter : <span id="outputMeter"></span></p>
+        <br>
+        <br>
+        <label>meter</label>
+        <input type="number" id="inputMeter" onchange="doiFeet(this.value)"
+               oninput="doiFeet(this.value)">
+        </p>
+        <p>feet : <span id="outputFeet"></span></p>
+
+    </form>
+    <script>
+        function doiMeter(feet){
+            document.getElementById('outputMeter').innerHTML= 0.305 * feet;
+        }
+        function doiFeet(meter){
+            document.getElementById('outputFeet').innerHTML= 3.279 * meter;
+        }
+    </script>
+
+
+<!--    <script>-->
+<!--        function feetToMeter(feet){-->
+<!--        let meter = 0.305*feet;-->
+<!--            return meter;-->
+<!--        }-->
+<!--        let meter =feetToMeter(prompt('nhap so feet'));-->
+<!--        document.write(meter+' meter');-->
+
+<!--        function meterToFeet(meter){-->
+<!--            let feet = 3.279 * meter;-->
+<!--            return feet;-->
+<!--        }-->
+<!--        let feet =meterToFeet(prompt('nhap so meter'));-->
+<!--        document.write(feet+' meter');-->
+<!--    </script>-->
+
+</body>
+</html>

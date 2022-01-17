@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.-->
+<!--Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+  <script>
+    function kiemTra(a) {
+        if (a % 1 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let a = prompt('nhap 1 ky tu');
+    let result = kiemTra(a);
+    if (result== true){
+        alert('la so');
+    }else {
+        alert('la chu');
+    }
+
+
+
+
+
+  </script>
+
+</body>
+</html>

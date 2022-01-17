@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+    <script>
+        function number(x){
+            let dayThua=1;
+        if (x>=0){
+            for (let i = 1; i <= x ; i++) {
+                dayThua = dayThua * i;
+            }
+        }else {
+            alert('day thua khong xac dinh')
+        }
+        return dayThua;
+        }
+        let x = parseInt(prompt('nhap so nguyen'))
+        dayThua= number(x);
+        document.write(dayThua);
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+  <script>
+        function dienTich(r){
+            let dienTich = r * r * 3.14;
+            return dienTich;
+        }
+        function chuVi(r) {
+            let chuVi = 2 * r * 3.14;
+            return chuVi;
+        }
+        let r= parseInt(prompt('nhap ban kinh hinh tron'));
+        document.write('dien tich hinh tron = '+dienTich(r));
+        document.write('<br>');
+        document.write('chu vi hinh tron = '+chuVi(r));
+  </script>
+
+</body>
+</html>
