@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.-->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+<script>
+    let mang =['a','b','c','d','e','a','b','c'];
+    let kyTu =prompt('nhap vao 1 ky tu');
+    function kiemTraMang(mang,kyTu){
+        let count=0
+        for (let i = 0; i <mang.length ; i++) {
+            if (kyTu == mang[i]){
+                count++;
+            }
+        }if (count>0){
+            return count;
+        }else {
+            return -1;
+        }
+    }
+    let kiemTra= kiemTraMang(mang,kyTu);
+    if (kiemTra>0){
+        document.write('so lan xuat hien cua '+kyTu+ ' la '+kiemTra);
+    }else {
+        document.write('-1');
+    }
+
+
+
+</script>
+
+
+</body>
+</html>
