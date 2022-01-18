@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Temperature{
+            constructor(doC) {
+                this.doC= doC ;
+            }
+            getDoC(){
+                return this.doC;
+            }
+            getDoiF(){
+                return (this.doC*1.8) +32;
+            }
+            getDoiK(){
+                return this.doC + 273.15;
+            }
+        }
+        let nhietDoC = new Temperature(7);
+        let doiSangF = nhietDoC.getDoiF();
+        let doiSangK = nhietDoC.getDoiK();
+        document.write('nhie do F '+doiSangF);
+        document.write('<br>');
+        document.write('nhiet do K '+doiSangK);
+
+
+    </script>
+
+</body>
+</html>
