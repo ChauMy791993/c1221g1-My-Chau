@@ -49,6 +49,7 @@
                 this.apple.decreaseWeight();
                 document.write('da an 1 mieng tao con '+ this.getApple()+' mieng'+'<br>');
             }
+            this.weight++;
         }
         getName() {
             return this.name;
@@ -79,13 +80,14 @@
     let apple = new Apple(10);
     let human = new Humnan();
     human.setName('Adam');
-    human.setWeight('90kg');
+    human.setWeight(90);
     human.setGender(true);
-    document.write('ten : '+human.name+ ' - gioi tinh : '+human.gender+ ' - can nang : '+human.weight+'<br>')
+    document.write('ten : '+human.name+ ' - gioi tinh : '+human.isMale()+ ' - can nang : '+human.weight+'<br>')
     human.setApple(apple)
-    for (let i = 0; i <11 ; i++) {
+    for (let i = 0; i <10 ; i++) {
         human.eat()
     }
+    console.log(human.getWeight());
   </script>
 
 </body>
