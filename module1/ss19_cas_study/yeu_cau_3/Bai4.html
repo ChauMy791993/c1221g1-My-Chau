@@ -8,7 +8,15 @@
 <!--Bài 4: Viết một chương trình nhập một số từ bàn phím và in ra màn hình bằng chữ. -->
 <!--Ví dụ 1234, kết quả in ra màn hình là một hai ba bốn.-->
     <script>
-        let so
+        let x = parseInt(prompt('nhap mot so'))
+        let so = [1,2,3,4];
+        let chu = ['mot','hai','ba','bon'];
+        let i = so.indexOf(x);
+        if (i >-1){
+            document.write(chu[i])
+        }else {
+            alert('khong tim thay')
+        }
 
     </script>
 
