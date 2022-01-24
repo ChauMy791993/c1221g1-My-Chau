@@ -9,17 +9,23 @@
 <!--Ví dụ: s1 = "aabcc" và s2 = "adcaa", thì kết quả commonCharacterCount(s1, s2) = 3.-->
 <!--2 xâu s1 và s2 có 3 kí tự chung: 2 kí tự 'a' và 1 kí tự 'c'.-->
     <script>
-        let s1 = "aabcc";
-        let s2 = "adcaa";
-        let count = 0;
-        let result = 0;
-        for (let i = 0; i <s1.length ; i++) {
-            for (let j = 0; j <s2.length ; j++) {
-                if (s2[j] == s1[i]){
-                    count = count +1
+        let string1 = "aabccdezyc";
+        let string2 = "adcaadezkm";
+        arrString1 = string1.split('').sort();
+        arrString2 = string2.split('').sort();
+        let arr = [];
+        for (let i = 0; i <arrString1.length ; i++) {
+            for (let j = 0; j <arrString2.length ; j++) {
+                if ( arrString2[j] == arrString1[i]){
+                    arr.push(arrString1[i]);
+                    arrString1[i] = '.'
+                    arrString2[j] = ','
+                    console.log(arrString1);
                 }
             }
         }
+        document.write('ki tu chung trong mang : '+ arr+ ' ,so ky tu : '+arr.length);
+
 
 
     </script>

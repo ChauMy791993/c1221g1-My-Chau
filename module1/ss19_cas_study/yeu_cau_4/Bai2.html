@@ -9,22 +9,27 @@
 <!--Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.-->
 <!--Có 3 kí tự khác nhau là a, b và c.-->
     <script>
-        let s = "cabca";
-        let count = 0;
-        let result = 0;
-        for (let i = 0; i <s.length ; i++) {
-            for (let j = 0; j <s.length ; j++) {
-              if (s[j]==s[i]){
-                  count += 1
-              }
+        let string = "cabcadefdef";
+        arrString = string.split("");
+        let arr = new Array(1);
+        let flag = false;
+        for (let i = 0; i <arrString.length ; i++) {
+            for (let j = 0; j <arr.length ; j++) {
+                if (arrString[i] == arr[j]){
+                    flag = false;
+                    break;
+                }else {
+                    flag = true;
+                }
             }
-            if (count =1){
-                result +=1
+            if (flag){
+                arr.push(arrString[i]);
             }
-            }
+        }
+        arr.shift();
+        document.write('cac ki tu khac nhau : '+arr+' , va so luong tu la : '+arr.length);
 
-        alert(result)
-
+    </script>
 
 
     </script>

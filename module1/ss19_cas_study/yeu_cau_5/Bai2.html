@@ -8,22 +8,29 @@
 <!--Bài 2: Viết hàm liệt kê các số nguyên tố trong mảng 2 chiều, đếm các số nguyên tố có trong mảng đó.-->
     <script>
         let arrNum = [
-            [3, 4, 5 ],
+            [1, 2, 3],
             [4, 5, 6],
             [7, 8, 9]
         ];
-        let conut = 0;
-        let result = '';
-        let flag = true;
+        let result = [];
         for (let i = 0; i <arrNum.length ; i++) {
             for (let j = 0; j < arrNum[i].length; j++) {
-                if(arrNum[i][j]< 2){
-                    flag = false
-                }else {}
-
-
+                let count = 0;
+                if(arrNum[i][j] <= 1){
+                    continue;
+                }else {
+                    for (let k = 2; k <= arrNum[i][j] ; k++) {
+                        if (arrNum[i][j] % k == 0){
+                            count++;
+                    }
+                    }
+                    if (count < 2){
+                        result.push(arrNum[i][j]);
+                    }
+                }
             }
         }
+        document.write('day so nguyen to = '+result+'<br>' +'so nguyen to co trong mang : '+result.length);
     </script>
 
 </body>
