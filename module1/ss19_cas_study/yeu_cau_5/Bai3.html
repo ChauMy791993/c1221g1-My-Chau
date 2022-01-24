@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 3: Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều-->
+    <script>
+        let arrNum = [
+            [3, 4, 5 ],
+            [4, 5, 6],
+            [7, 8, 9]
+        ];
+        let max = 0;
+        let min =arrNum[0][0];
+        for (let i = 0; i <arrNum.length ; i++) {
+            for (let j = 0; j <arrNum[i].length ; j++) {
+                if (arrNum[i][j] > max){
+                    max = arrNum[i][j];
+                }else if (arrNum[i][j]< min ){
+                    min = arrNum[i][j];
+                }
+            }
+        }
+        document.write('gia tri lon nhat : '+ max + '<br>');
+        document.write('gia tri nho nhat : '+ min);
+    </script>
+
+</body>
+</html>
