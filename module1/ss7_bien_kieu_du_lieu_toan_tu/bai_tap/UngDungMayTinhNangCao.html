@@ -5,29 +5,30 @@
     <title>ung dung may tinh nang cao</title>
 </head>
 <body>
-                <input type="number" id="giaTri1">
-                <input type="number" id="giaTri2">
-                <br>
-                <br>
-                <button type="button" onclick="s('+')" > addition(+)</button>
-                <button type="button" onclick="s('-')" > subtraction(-)</button>
-                <button type="button" onclick="s('*')" > Multiplication(x)</button>
-                <button type="button" onclick="s('/')" > Division(/)</button>
+<input type="number" id="giaTri1">
+<input type="number" id="giaTri2">
+<br>
+<br>
+<button type="button" onclick="s('+')"> addition(+)</button>
+<button type="button" onclick="s('-')"> subtraction(-)</button>
+<button type="button" onclick="s('*')"> Multiplication(x)</button>
+<button type="button" onclick="s('/')"> Division(/)</button>
 
 <script>
-    function s(n){
-        let s1=parseInt(document.getElementById('giaTri1').value) ;
-        let s2=parseInt(document.getElementById('giaTri2').value);
+    function s(n) {
+        let s1 = parseInt(document.getElementById('giaTri1').value);
+        let s2 = parseInt(document.getElementById('giaTri2').value);
         let x;
-        if (n == '+')
-        {x= s1+s2}
-        else if( n == '-')
-        {x=s1-s2}
-        else if ( n =='*')
-        {x= s1*s2}
-        else
-        {x= s1/s2}
-        document.write('ketqua='+x)
+        if (n == '+') {
+            x = s1 + s2
+        } else if (n == '-') {
+            x = s1 - s2
+        } else if (n == '*') {
+            x = s1 * s2
+        } else {
+            x = s1 / s2
+        }
+        document.write('ketqua=' + x)
     }
 </script>
 </body>

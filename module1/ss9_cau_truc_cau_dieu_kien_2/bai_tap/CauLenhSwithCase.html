@@ -6,14 +6,14 @@
 </head>
 <body>
 
-  <form>
+<form>
     <input type="number" id="soThang">
-      <button type="button" onclick="soNgay()">Tính số ngày</button>
-  </form>
-  <p id="display">
-  </p>
-    <script>
-        function soNgay() {
+    <button type="button" onclick="soNgay()">Tính số ngày</button>
+</form>
+<p id="display">
+</p>
+<script>
+    function soNgay() {
         let x = parseInt(document.getElementById("soThang").value);
         switch (x) {
             case 1 :
@@ -23,18 +23,18 @@
             case 8 :
             case 10 :
             case 12 :
-                document.getElementById('display').innerHTML='Tháng ' +x+ ' có 31 ngày';
+                document.getElementById('display').innerHTML = 'Tháng ' + x + ' có 31 ngày';
                 break;
             case 2 :
-                document.getElementById('display').innerHTML='Tháng ' +x+ ' có 28 hoặc 29 ngày';
+                document.getElementById('display').innerHTML = 'Tháng ' + x + ' có 28 hoặc 29 ngày';
                 break;
             case 4 :
             case 6 :
             case 9 :
             case 11 :
-                document.getElementById('display').innerHTML= 'Tháng ' +x+ ' có 30 ngày';
+                document.getElementById('display').innerHTML = 'Tháng ' + x + ' có 30 ngày';
         }
-        }
+    }
 
 </script>
 

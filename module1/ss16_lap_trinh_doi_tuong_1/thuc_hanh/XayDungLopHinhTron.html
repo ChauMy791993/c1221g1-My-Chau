@@ -5,32 +5,36 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        class Circle {
-            constructor(radius,color) {
-                this.radius = radius;
-                this.color = color;
-            }
-            getRadius(){
-                return this.radius;
-            }
-            getArea(){
-                return Math.PI * this.radius *this.radius;
-            }
-            getColor(){
-                return this.color;
-            }
+<script>
+    class Circle {
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = color;
         }
-        let hinhTron = new Circle(3,'vang');
-        let banKinh = hinhTron.getRadius();
-        let dienTich = hinhTron.getArea();
-        let mau = hinhTron.getColor();
-        document.write('ban kinh hinh tron : '+banKinh);
-        document.write('<br>')
-        document.write('dien tich hinh tron : '+ dienTich);
-        document.write('<br>')
-        document.write('mau cua hinh tron : '+mau);
-    </script>
+
+        getRadius() {
+            return this.radius;
+        }
+
+        getArea() {
+            return Math.PI * this.radius * this.radius;
+        }
+
+        getColor() {
+            return this.color;
+        }
+    }
+
+    let hinhTron = new Circle(3, 'vang');
+    let banKinh = hinhTron.getRadius();
+    let dienTich = hinhTron.getArea();
+    let mau = hinhTron.getColor();
+    document.write('ban kinh hinh tron : ' + banKinh);
+    document.write('<br>')
+    document.write('dien tich hinh tron : ' + dienTich);
+    document.write('<br>')
+    document.write('mau cua hinh tron : ' + mau);
+</script>
 
 </body>
 </html>

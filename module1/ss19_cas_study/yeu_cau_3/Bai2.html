@@ -9,26 +9,26 @@
 <!--xuất hiện trong mảng B nhưng lại không xuất hiện A-->
 <!--Chú ý các phần tử giống nhau chỉ tính là 1 lần xuất hiện-->
 <!--Ví dụ:  A=[7,2,5,3,5,3] và B=[7,2,5,4,6,3,5,3] thì kết quả missingValue(A, B) = [4, 6]-->
-    <script>
-        let A=[7,2,5,3,5,3,11,22,33,44,55,66];
-        let B=[7,2,5,4,6,3,5,3,8,9,10,11,22,33,55,44,66];
-        let missingValue = [];
-        for (let i = 0; i <B.length ; i++) {
-            for (let j = 0; j <A.length; j++) {
-                if (A[j]==B[i]){
-                    B[i] = ''
-                }
+<script>
+    let A = [7, 2, 5, 3, 5, 3, 11, 22, 33, 44, 55, 66];
+    let B = [7, 2, 5, 4, 6, 3, 5, 3, 8, 9, 10, 10, 11, 11, 22, 33, 55, 44, 66];
+    let missingValue = [];
+    for (let i = 0; i < B.length; i++) {
+        for (let j = 0; j < A.length; j++) {
+            if (A[j] == B[i]) {
+                B[i] = ''
             }
         }
-        for (let i = 0; i <B.length; i++) {
-            if (B[i] != ''){
-                missingValue.push(B[i]);
-            }
+    }
+    for (let i = 0; i < B.length; i++) {
+        if (B[i] != '') {
+            missingValue.push(B[i]);
         }
-        document.write(missingValue);
+    }
+    document.write(missingValue)
 
 
-    </script>
+</script>
 
 </body>
 </html>

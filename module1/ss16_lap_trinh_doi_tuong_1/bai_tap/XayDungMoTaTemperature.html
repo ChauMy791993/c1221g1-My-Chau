@@ -5,36 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        class Temperature{
-            constructor(doC) {
-                this.doC= doC ;
-            }
-            getDoC(){
-                return this.doC;
-            }
-            getDoiF(){
-                return (this.doC*1.8) +32;
-            }
-            getDoiK(){
-                return this.doC + 273.15;
-            }
-        }
-        let x = parseInt(prompt('nhap nhiet do'));
-
-        let nhietDoC = new Temperature(x);
-        if (x >= -273){
-            let doC = nhietDoC.getDoC()
-            let doiSangF = nhietDoC.getDoiF();
-            let doiSangK = nhietDoC.getDoiK();
-            document.write('nhie do F '+doiSangF);
-            document.write('<br>');
-            document.write('nhiet do K '+doiSangK);
-        }else {
-            alert('nhiet do khong dung')
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC;
         }
 
-    </script>
+        getDoC() {
+            return this.doC;
+        }
+
+        getDoiF() {
+            return (this.doC * 1.8) + 32;
+        }
+
+        getDoiK() {
+            return this.doC + 273.15;
+        }
+    }
+
+    let x = parseInt(prompt('nhap nhiet do'));
+
+    let nhietDoC = new Temperature(x);
+    if (x >= -273) {
+        let doC = nhietDoC.getDoC()
+        let doiSangF = nhietDoC.getDoiF();
+        let doiSangK = nhietDoC.getDoiK();
+        document.write('nhie do F ' + doiSangF);
+        document.write('<br>');
+        document.write('nhiet do K ' + doiSangK);
+    } else {
+        alert('nhiet do khong dung')
+    }
+
+</script>
 
 </body>
 </html>

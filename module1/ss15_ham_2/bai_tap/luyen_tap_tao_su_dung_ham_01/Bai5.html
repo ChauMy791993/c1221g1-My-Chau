@@ -6,20 +6,22 @@
 </head>
 <body>
 <!--tim ten ngoi sao tra ve tem chom sao-->
-    <script>
-        let nameNgoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
-        let nameChomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", " Ursa", "Major", "Leo"];
-        function timChomSao(x){
-            let i = nameNgoiSao.indexOf(x);
-            if(i>-1){
-                let result = nameChomSao[i];
-                document.write(result);
-            }else {
-                alert('nothing');
-            }
+<script>
+    let nameNgoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let nameChomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", " Ursa", "Major", "Leo"];
+
+    function timChomSao(x) {
+        let i = nameNgoiSao.indexOf(x);
+        if (i > -1) {
+            let result = nameChomSao[i];
+            document.write(result);
+        } else {
+            alert('nothing');
         }
-        timChomSao(prompt('nhap ten ngoi sao'));
-    </script>
+    }
+
+    timChomSao(prompt('nhap ten ngoi sao'));
+</script>
 
 </body>
 </html>

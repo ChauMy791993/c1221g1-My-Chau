@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Câu 1: Nhập từ bàn phím mảng số nguyên gồm n phần tử (n<=50).-->
+<!--Hiển thị ra màn hình danh sách các phần tử của mảng,-->
+<!--hiện thị giá trị trung bình của các phần tử chia hết cho 5 ở vị trí chia hết cho 3 ( phần tử có index chia hết cho 3)-->
+<!--Ví dụ: [15,2,3,5,10,15,7,8,9,10]. Kết quả sau khi thực hiện là: (15+5+10)/3) = 10-->
+<script>
+    let arrN = [];
+    let result = [];
+    let avg =0;
+    let sizeN = parseInt(prompt('nhap do dai cua mang N'));
+    if (sizeN > 50){
+        alert('do dai khong dung');
+    }else {
+        for (let i = 0; i <sizeN ; i++) {
+            arrN.push(parseInt(prompt('nhap so nguyen trong mang N')));
+        }
+    }
+    alert('mang N : '+arrN);
+    for (let j = 0; j <arrN.length ; j++) {
+        if (arrN[j]%5 == 0 && j%3 ==0){
+            result.push(arrN[j]);
+        }
+    }
+    for (let i = 0; i <result.length ; i++) {
+        avg = avg + result[i];
+    }
+    avg = avg/result.length;
+    alert(result+'gia tri trung binh: '+avg);
+
+</script>
+
+</body>
+</html>

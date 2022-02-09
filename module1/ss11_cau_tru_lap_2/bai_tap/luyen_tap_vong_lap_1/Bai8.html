@@ -5,33 +5,33 @@
     <title>Title</title>
 </head>
 <body>
-    <button type="button" onclick="playgame()">chơi</button>
-    <script>
-        function playgame(){
-            let max= prompt('nhap vao gia tri lon nhat cua so can doan');
-            let random= Math.ceil(max*Math.random());
-            let yourNumber;
-            let count=0;
-            do{
-                count++;
-                yourNumber= prompt('nhap so ban can du doan lan thu'+ count);
-                if(yourNumber==random){
-                    alert('ban da win');
-                    break;
-                }else if(yourNumber>random){
-                    alert('so ban nhap lon hon so du doan');
-                }else {
-                    alert('so ban nhap nho hon so du doan');
-                }
-                if(count==3){
-                    alert('ban da het so lan du doan');
-                    break;
-                }
+<button type="button" onclick="playgame()">chơi</button>
+<script>
+    function playgame() {
+        let max = prompt('nhap vao gia tri lon nhat cua so can doan');
+        let random = Math.ceil(max * Math.random());
+        let yourNumber;
+        let count = 0;
+        do {
+            count++;
+            yourNumber = prompt('nhap so ban can du doan lan thu' + count);
+            if (yourNumber == random) {
+                alert('ban da win');
+                break;
+            } else if (yourNumber > random) {
+                alert('so ban nhap lon hon so du doan');
+            } else {
+                alert('so ban nhap nho hon so du doan');
             }
-            while (true)
+            if (count == 3) {
+                alert('ban da het so lan du doan');
+                break;
+            }
         }
+        while (true)
+    }
 
 
-    </script>
+</script>
 </body>
 </html>

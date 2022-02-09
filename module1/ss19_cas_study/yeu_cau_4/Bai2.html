@@ -8,31 +8,31 @@
 <!--Bài 2: Cho xâu kí tự. Hãy đếm số lượng kí tự khác nhau trong xâu đó-->
 <!--Ví dụ: s = "cabca", thì kết quả differentSymbolsNaive(s) = 3.-->
 <!--Có 3 kí tự khác nhau là a, b và c.-->
-    <script>
-        let string = "cabcadefdef";
-        arrString = string.split("");
-        let arr = new Array(1);
-        let flag = false;
-        for (let i = 0; i <arrString.length ; i++) {
-            for (let j = 0; j <arr.length ; j++) {
-                if (arrString[i] == arr[j]){
-                    flag = false;
-                    break;
-                }else {
-                    flag = true;
-                }
-            }
-            if (flag){
-                arr.push(arrString[i]);
+<script>
+    let string = "cabcadefdef";
+    arrString = string.split("");
+    let arr = new Array(1);
+    let flag = false;
+    for (let i = 0; i < arrString.length; i++) {
+        for (let j = 0; j < arr.length; j++) {
+            if (arrString[i] == arr[j]) {
+                flag = false;
+                break;
+            } else {
+                flag = true;
             }
         }
-        arr.shift();
-        document.write('cac ki tu khac nhau : '+arr+' , va so luong tu la : '+arr.length);
+        if (flag) {
+            arr.push(arrString[i]);
+        }
+    }
+    arr.shift();
+    document.write('cac ki tu khac nhau : ' + arr + ' , va so luong tu la : ' + arr.length);
 
-    </script>
+</script>
 
 
-    </script>
+</script>
 
 </body>
 </html>

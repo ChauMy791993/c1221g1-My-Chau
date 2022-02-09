@@ -10,33 +10,28 @@
 <!--Ví dụ tRuong    TaN   HAI => Truong Tan Hai.-->
 <!--Và một hàm tìm từ dài nhất trong 1 xâu ký tự. Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím,-->
 <!--in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.-->
-    <script>
-        let string = 'tRuong    TaN   HAI';
-        let newString = [];
-        string = string.toLowerCase();
-        for (let i = 0; i <string.length ; i++) {
-            if (string[i] ==' '&& string[i+1] == ' '){
-                continue;
-            }else {
-                newString.push(string[i]);
-            }
+<script>
+    let string = 'tRuong    TaN   HAI';
+    let newString = [];
+    string = string.toLowerCase();
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] == ' ' && string[i + 1] == ' ') {
+            continue;
+        } else {
+            newString.push(string[i]);
         }
-        newString[0] = newString[0].toUpperCase();
-        for (let i = 0; i <newString.length ; i++) {
-            if (newString[i] == ' '){
-                newString[i+1] =newString[i+1].toUpperCase();
-            }
+    }
+    newString[0] = newString[0].toUpperCase();
+    for (let i = 0; i < newString.length; i++) {
+        if (newString[i] == ' ') {
+            newString[i + 1] = newString[i + 1].toUpperCase();
         }
-        newString= newString.join('');
-        alert(newString)
+    }
+    newString = newString.join('');
+    alert(newString);
 
 
-
-
-
-
-
-    </script>
+</script>
 
 </body>
 </html>

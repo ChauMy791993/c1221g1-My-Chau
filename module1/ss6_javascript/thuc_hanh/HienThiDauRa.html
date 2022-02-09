@@ -5,25 +5,29 @@
     <title>hiển thị đầu ra</title>
 </head>
 <body>
-    <button type="button" onclick="showMessage ();">click me</button>
-    <script>function showMessage (){alert('xin chao')} </script>
-
+<button type="button" onclick="showMessage ();">click me</button>
+<script>function showMessage() {
+    alert('xin chao')
+} </script>
 
 
 <div id="messagediv"></div>
 <button type="button" onclick="showMessage()">click me</button>
-<script>function showMessage() {document.getElementById('messagediv').innerHTML='xin chao'}
+<script>function showMessage() {
+    document.getElementById('messagediv').innerHTML = 'xin chao'
+}
 </script>
 
 
+<button type="button" onclick="showMessage()">click me</button>
+<script>function showMessage() {
+    document.write('xin chao')
+}</script>
+
 
 <button type="button" onclick="showMessage()">click me</button>
-<script>function showMessage() {document.write('xin chao')}</script>
-
-
-
-
-<button type="button" onclick="showMessage()">click me</button>
-<script>function showMessage() {console.log('xin chao')}</script>
+<script>function showMessage() {
+    console.log('xin chao')
+}</script>
 </body>
 </html>

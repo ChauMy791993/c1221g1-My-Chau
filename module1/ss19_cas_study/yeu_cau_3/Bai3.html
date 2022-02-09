@@ -10,21 +10,21 @@
 <!--Ví dụ: numerators = [5, 2, 5] và denominators = [6, 3, 4],
  thì kết quả maxFraction(numerators, denominators) = 2.-->
 <!--5/4 là phân số lớn nhất, có chỉ số là 2.-->
-    <script>
-        let tuSO = [5, 2, 5];
-        let mauSo = [6, 3, 4];
-        let max = tuSO[0]/mauSo[0];
-        let phanSo;
-        let index = 0;
-        for (let i = 0; i <tuSO.length ; i++) {
-            phanSo= tuSO[i]/mauSo[i]
-            if (phanSo > max){
-                max = phanSo;
-                index = i;
-            }
+<script>
+    let tuSO = [5, 2, 5];
+    let mauSo = [6, 3, 4];
+    let max = tuSO[0] / mauSo[0];
+    let phanSo;
+    let index = 0;
+    for (let i = 0; i < tuSO.length; i++) {
+        phanSo = tuSO[i] / mauSo[i]
+        if (phanSo > max) {
+            max = phanSo;
+            index = i;
         }
-        document.write(phanSo+ ' o vi tri '+index);
-    </script>
+    }
+    alert(phanSo + ' o vi tri ' + index);
+</script>
 
 </body>
 </html>

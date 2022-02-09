@@ -5,25 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        let count = 0;
-        let tong =0;
-        let daySo='';
-        for (let i=1; ; i++){
-            if(i%7==0){
-                daySo=daySo +i+' ';
-                tong= tong+ i;
-                count++;
-                if(count==30)
-                    break;
-            }
+<script>
+    let count = 0;
+    let tong = 0;
+    let daySo = '';
+    for (let i = 1; ; i++) {
+        if (i % 7 == 0) {
+            daySo = daySo + i + ' ';
+            tong = tong + i;
+            count++;
+            if (count == 30)
+                break;
         }
-        document.write(daySo+"<br>");
-        document.write("Tổng bằng "+tong);
+    }
+    document.write(daySo + "<br>");
+    document.write("Tổng bằng " + tong);
 
 
-
-    </script>
+</script>
 
 </body>
 </html>

@@ -5,50 +5,44 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        // let myColor= ['red','green','white','black'];
-        // document.write(myColor.join());
-        //
-        // document.write('<br><br>')
+<script>
+    // let myColor= ['red','green','white','black'];
+    // document.write(myColor.join());
+    //
+    // document.write('<br><br>')
 
-        // let num = prompt();
-        // let str = num.toString();
-        // let result = [str[0]];
-        //
-        // for (let x = 1; x < str.length; x++) {
-        //     if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
-        //         result.push('-', str[x]);
-        //     } else {
-        //         result.push(str[x]);
-        //     }
-        // }
-        // document.write(result.join(''));
+    // let num = prompt();
+    // let str = num.toString();
+    // let result = [str[0]];
+    //
+    // for (let x = 1; x < str.length; x++) {
+    //     if (str[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+    //         result.push('-', str[x]);
+    //     } else {
+    //         result.push(str[x]);
+    //     }
+    // }
+    // document.write(result.join(''));
 
-        // document.write('<br><br>')
+    // document.write('<br><br>')
 
-        let str = 'The Quick Brown Fox';
-        let UPPER = 'A';
-        let LOWER = 'a';
-        let result = [];
+    let str = 'The Quick Brown Fox';
+    let UPPER = 'A';
+    let LOWER = 'a';
+    let result = [];
 
-        for(let x=0; x<str.length; x++)
-        {
-            if(UPPER.indexOf(str[x]) !== -1)
-            {
-                result.push(str[x].toLowerCase());
-            }
-            else if(LOWER.indexOf(str[x]) !== -1)
-            {
-                result.push(str[x].toUpperCase());
-            }
-            else
-            {
-                result.push(str[x]);
-            }
+    for (let x = 0; x < str.length; x++) {
+        if (UPPER.indexOf(str[x]) !== -1) {
+            result.push(str[x].toLowerCase());
+        } else if (LOWER.indexOf(str[x]) !== -1) {
+            result.push(str[x].toUpperCase());
+        } else {
+            result.push(str[x]);
         }
-        document.write(result.join(''));
+    }
+    document.write(result.join(''));
 
 
-    </script>
+</script>
 </body>
 </html>

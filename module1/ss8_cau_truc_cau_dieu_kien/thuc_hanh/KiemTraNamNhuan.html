@@ -5,23 +5,23 @@
     <title>tinh nam nhuan</title>
 </head>
 <body>
-    <script>
-        let year = parseInt(prompt('nhap nam vao'))
+<script>
+    let year = parseInt(prompt('nhap nam vao'))
 
-        if (year % 4 == 0) {
-            if (year % 100 == 0) {
-                if (year % 400 == 0) {
-                    alert(year + "leap year");
-                } else {
-                    alert(year + "NOT a leap year");
-                }
-            } else {
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
                 alert(year + "leap year");
+            } else {
+                alert(year + "NOT a leap year");
             }
         } else {
-            alert(year + "NOT a leap year");
+            alert(year + "leap year");
         }
-    </script>
+    } else {
+        alert(year + "NOT a leap year");
+    }
+</script>
 
 </body>
 </html>

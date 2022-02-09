@@ -5,53 +5,56 @@
     <title>Title</title>
 </head>
 <body>
-  <script>
-      class SwtichButton{
-          constructor(ElectricLamp) {
-              this.status = false;
-              this.lamp = ElectricLamp;
-          }
-          connectToLamp(ElectricLamp){
-              if (this.status == true ){
-                  alert('da ket noi');
-              }else {
-                  alert('chua ket noi');
-              }
-          }
-          switchOff(){
-              this.status = false;
-              this.lamp.turnoff();
-          }
-          switchOn(){
-              this.status = true;
-              this.lamp.turnOn();
-          }
-      }
+<script>
+    class SwtichButton {
+        constructor(ElectricLamp) {
+            this.status = false;
+            this.lamp = ElectricLamp;
+        }
 
+        connectToLamp(ElectricLamp) {
+            if (this.status == true) {
+                alert('da ket noi');
+            } else {
+                alert('chua ket noi');
+            }
+        }
 
+        switchOff() {
+            this.status = false;
+            this.lamp.turnoff();
+        }
 
-
-
-    class ElectricLamp{
-          constructor(status) {
-              this.status = false;
-          }
-          turnoff(){
-              this.status = false;
-              document.write('den dang tat'+'<br>');
-          }
-          turnOn(){
-              this.status = true;
-              document.write('den dang bat'+'<br>');
-          }
+        switchOn() {
+            this.status = true;
+            this.lamp.turnOn();
+        }
     }
-      let bongDen = new ElectricLamp();
-      let congTac = new SwtichButton(bongDen);
-      for (let i = 0; i <10 ; i++) {
-          congTac.switchOn();
-          congTac.switchOff();
-      }
-  </script>
+
+
+    class ElectricLamp {
+        constructor(status) {
+            this.status = false;
+        }
+
+        turnoff() {
+            this.status = false;
+            document.write('den dang tat' + '<br>');
+        }
+
+        turnOn() {
+            this.status = true;
+            document.write('den dang bat' + '<br>');
+        }
+    }
+
+    let bongDen = new ElectricLamp();
+    let congTac = new SwtichButton(bongDen);
+    for (let i = 0; i < 10; i++) {
+        congTac.switchOn();
+        congTac.switchOff();
+    }
+</script>
 
 </body>
 </html>

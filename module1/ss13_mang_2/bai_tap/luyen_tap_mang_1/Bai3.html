@@ -5,23 +5,23 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        let num = [1,3,5,10,11,12,15,18,19,20];
-        let max = num[0];
-        let index = 0;
-        let tongTB = 0;
-        for (let i=0;i<num.length; i++){
-            if (max<num[i]){
-                max= num[i];
-                index= i;
-                tongTB += num[i];
-            }
+<script>
+    let num = [1, 3, 5, 10, 11, 12, 15, 18, 19, 20];
+    let max = num[0];
+    let index = 0;
+    let tongTB = 0;
+    for (let i = 0; i < num.length; i++) {
+        if (max < num[i]) {
+            max = num[i];
+            index = i;
+            tongTB += num[i];
         }
-        tongTB = tongTB/num.length;
-        document.write('so ' + max + ' o vi tri '+ index);
-        document.write('<br>');
-        document.write('tong trung binh = '+tongTB);
-    </script>
+    }
+    tongTB = tongTB / num.length;
+    document.write('so ' + max + ' o vi tri ' + index);
+    document.write('<br>');
+    document.write('tong trung binh = ' + tongTB);
+</script>
 
 
 </body>

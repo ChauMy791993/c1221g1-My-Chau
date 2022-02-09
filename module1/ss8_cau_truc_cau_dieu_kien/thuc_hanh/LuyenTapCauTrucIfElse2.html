@@ -5,29 +5,25 @@
     <title>dang nhap he thong</title>
 </head>
 <body>
-    <script>
-        let userName = prompt('hay nhap username');
-        if (userName=='Admin'){
-            alert('Welcome')
-        }
-        else if (userName == null ){
-            alert('canceled')
-        }
-        else {
-            alert("I don't know you")
-        }
+<script>
+    let userName = prompt('hay nhap username');
+    if (userName == 'Admin') {
+        alert('Welcome')
+    } else if (userName == null) {
+        alert('canceled')
+    } else {
+        alert("I don't know you")
+    }
 
-        let pass = prompt('password?')
-        if (pass == 'TheMaster'){
-            alert('Welcome');
-        }
-        else if (pass == null){
-            alert('Cancled');
-        }
-        else {
-            alert('Wrong password')
-        }
-    </script>
+    let pass = prompt('password?')
+    if (pass == 'TheMaster') {
+        alert('Welcome');
+    } else if (pass == null) {
+        alert('Cancled');
+    } else {
+        alert('Wrong password')
+    }
+</script>
 
 </body>
 </html>

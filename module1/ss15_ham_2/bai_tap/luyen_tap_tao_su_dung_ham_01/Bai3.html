@@ -5,20 +5,22 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        let a= parseInt(prompt('nhap so a'));
-        let b= parseInt(prompt('nhap so b'));
-        function sum(a,b){
-            if (a>b){
-                alert(a+ ' > ' +b);
-            }else if (a<=b){
-                let tongSo= a+b;
-                return tongSo;
-            }
+<script>
+    let a = parseInt(prompt('nhap so a'));
+    let b = parseInt(prompt('nhap so b'));
+
+    function sum(a, b) {
+        if (a > b) {
+            alert(a + ' > ' + b);
+        } else if (a <= b) {
+            let tongSo = a + b;
+            return tongSo;
         }
-        let tongSo= sum(a,b);
-        alert(tongSo);
-    </script>
+    }
+
+    let tongSo = sum(a, b);
+    alert(tongSo);
+</script>
 
 </body>
 </html>

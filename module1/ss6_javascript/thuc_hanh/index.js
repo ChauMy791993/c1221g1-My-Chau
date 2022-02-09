@@ -1,1 +1,3 @@
-function showMessage() {alert('xin chao;')}
+function showMessage() {
+    alert('xin chao;')
+}

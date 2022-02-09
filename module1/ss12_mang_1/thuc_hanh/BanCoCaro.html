@@ -14,17 +14,17 @@
     let banCo = []
     let data = ""
 
-    for (let i=0; i<5; i++){
-        banCo[i] = new Array(0,0,0,0,0)
+    for (let i = 0; i < 5; i++) {
+        banCo[i] = new Array(0, 0, 0, 0, 0)
     }
 
-    for(let i=0; i<banCo.length; i++){
+    for (let i = 0; i < banCo.length; i++) {
         data += "<br>"
-        for (let j=0; j<banCo[i].length;j++){
+        for (let j = 0; j < banCo[i].length; j++) {
             data += banCo[i][j] + "  "
         }
     }
-    co.innerHTML  = data
+    co.innerHTML = data
 
     function changer() {
         let dong, cot
@@ -32,10 +32,10 @@
         cot = Number(prompt("Nhập cột thay đổi") - 1)
         data = ""
         banCo[dong][cot] = "X"
-        for (let i=0;i<banCo.length;i++){
+        for (let i = 0; i < banCo.length; i++) {
             data += "<br>"
-            for (let j=0; j<banCo[i].length; j++){
-                data+= banCo[i][j] + "  "
+            for (let j = 0; j < banCo[i].length; j++) {
+                data += banCo[i][j] + "  "
             }
         }
         co.innerHTML = data

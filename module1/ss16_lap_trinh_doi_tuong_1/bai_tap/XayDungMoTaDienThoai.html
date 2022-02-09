@@ -20,62 +20,70 @@
     //     Có chức năng xem tin đã gửi.
     //     Sau mỗi lần sử dụng một chức năng, năng lượng pin sẽ giảm đi một đơn vị.
     //     Các chức năng không thể hoạt động nếu điện thoại chưa bật.
-  class DientThoai{
-    constructor() {
-      this.pin=12;
-      this.trangThai=true;
-      this.vungSoanTin="";
-      this.vungTinDaGui=[];
-      this.vungTinDen=[];
-    }
-    getTrangThai(){
-      return this.trangThai;
-    }
-    batTat(){
-      this.trangThai = !this.trangThai;
-    }
-    sacPin(){
-      if (this.pin<10){
-        this.pin=100;
-      }
-    }
-    soanTinNhan(message){
-      if (this.pin<=10){
-        alert("Diện thoại cần phải sạc");
-      }else {
-        if (this.getTrangThai()){
-          this.pin--;
-          this.vungSoanTin =message;
+    class DientThoai {
+        constructor() {
+            this.pin = 12;
+            this.trangThai = true;
+            this.vungSoanTin = "";
+            this.vungTinDaGui = [];
+            this.vungTinDen = [];
         }
-      }
-    }
-    nhanTinNhan( message){
-      this.pin--
-      this.vungTinDen.push(message);
-    }
-    guiTinNhan(dientThoai,message){
-      this.soanTinNhan(message);
-      this.vungTinDaGui.push(this.vungSoanTin);
-      this.vungSoanTin="";
-      dientThoai.nhanTinNhan(this.vungTinDaGui[this.vungTinDaGui.length-1]);
-    }
-    hienThiHopThuDen(){
-      for (let i = 0; i <this.vungTinDen.length ; i++) {
-        console.log((i+1) +"."+ this.vungTinDen[i]);
-      }
+
+        getTrangThai() {
+            return this.trangThai;
+        }
+
+        batTat() {
+            this.trangThai = !this.trangThai;
+        }
+
+        sacPin() {
+            if (this.pin < 10) {
+                this.pin = 100;
+            }
+        }
+
+        soanTinNhan(message) {
+            if (this.pin <= 10) {
+                alert("Diện thoại cần phải sạc");
+            } else {
+                if (this.getTrangThai()) {
+                    this.pin--;
+                    this.vungSoanTin = message;
+                }
+            }
+        }
+
+        nhanTinNhan(message) {
+            this.pin--
+            this.vungTinDen.push(message);
+        }
+
+        guiTinNhan(dientThoai, message) {
+            this.soanTinNhan(message);
+            this.vungTinDaGui.push(this.vungSoanTin);
+            this.vungSoanTin = "";
+            dientThoai.nhanTinNhan(this.vungTinDaGui[this.vungTinDaGui.length - 1]);
+        }
+
+        hienThiHopThuDen() {
+            for (let i = 0; i < this.vungTinDen.length; i++) {
+                console.log((i + 1) + "." + this.vungTinDen[i]);
+            }
+
+        }
 
     }
 
-  }
-  let iphone = new DientThoai();
-  let nokia = new DientThoai();
-  iphone.guiTinNhan(nokia,"Hello nokia");
-  nokia.hienThiHopThuDen();
-  nokia.guiTinNhan(iphone,"Hello Iphone tôi đã nhận được tin nhắn");
-  iphone.hienThiHopThuDen();
-  iphone.batTat();
-  iphone.guiTinNhan(nokia,"Bạn khỏe không nokia");
-  nokia.hienThiHopThuDen();
+    let iphone = new DientThoai();
+    let nokia = new DientThoai();
+    iphone.guiTinNhan(nokia, "Hello nokia");
+    nokia.hienThiHopThuDen();
+    nokia.guiTinNhan(iphone, "Hello Iphone tôi đã nhận được tin nhắn");
+    iphone.hienThiHopThuDen();
+    iphone.batTat();
+    iphone.guiTinNhan(nokia, "Bạn khỏe không nokia");
+    nokia.hienThiHopThuDen();
 
 </script>
 

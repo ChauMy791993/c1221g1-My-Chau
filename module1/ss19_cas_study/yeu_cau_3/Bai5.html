@@ -21,28 +21,28 @@
 kết thúc quá trình đặt thức uống khi người nhấn số 7-->
 
 <body>
-  <script>
-    let doUong = ['cafe','cam vắt','nước ép cà rốt','nước ép cà chua','nước lọc','nước dừa'];
-    let giaDoUong = [15,30,25,25,10,30];
+<script>
+    let doUong = ['cafe', 'cam vắt', 'nước ép cà rốt', 'nước ép cà chua', 'nước lọc', 'nước dừa'];
+    let giaDoUong = [15, 30, 25, 25, 10, 30];
     let listDoUong = '';
     let chonDoUong = [];
-    for (let i = 0; i <doUong.length ; i++) {
-        listDoUong = listDoUong + '\n'+ (i+1)+'.'+ doUong[i]+' gia tien : '+giaDoUong[i];
+    for (let i = 0; i < doUong.length; i++) {
+        listDoUong = listDoUong + '\n' + (i + 1) + '.' + doUong[i] + ' gia tien : ' + giaDoUong[i];
     }
     let tongTien = 0;
     do {
-        let chosse = prompt(listDoUong+'\n'+((doUong.length+1)+'.exit'));
-        chonDoUong.push(doUong[chosse-1]);
-        if (chosse == 7){
+        let chosse = prompt(listDoUong + '\n' + ((doUong.length + 1) + '.exit'));
+        chonDoUong.push(doUong[chosse - 1]);
+        if (chosse == 7) {
             break;
         }
-        let soLuong = prompt('nhap so luong do uong + '+ doUong[chosse-1]);
-        tongTien = tongTien + soLuong * giaDoUong[chosse-1];
+        let soLuong = prompt('nhap so luong do uong + ' + doUong[chosse - 1]);
+        tongTien = tongTien + soLuong * giaDoUong[chosse - 1];
 
-    }while (true)
-    alert(chonDoUong + 'tong tien hoa don : '+ tongTien);
+    } while (true)
+    alert(chonDoUong + 'tong tien hoa don : ' + tongTien);
 
-  </script>
+</script>
 
 </body>
 </html>

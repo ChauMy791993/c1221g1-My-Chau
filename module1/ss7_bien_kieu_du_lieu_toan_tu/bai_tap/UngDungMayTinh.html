@@ -5,56 +5,57 @@
     <title>Ung dung may tinh</title>
 </head>
 <body>
-  <table>
+<table>
     <form>
-      <tr>
-        <td>
-          <input type="number" id="giaTri1">
-        </td>
-        <td>
-          <input type="number" id="giaTri2">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <button type="button" onclick="cong()"> Addtion(+)</button>
-          <button type="button" onclick="tru()" > subtraction(-)</button>
-        </td>
-        <td>
-          <button type="button" onclick="nhan()" > Multiplication(x)</button>
-          <button type="button" onclick="chia()" > Division(/)</button>
-        </td>
-      </tr>
+        <tr>
+            <td>
+                <input type="number" id="giaTri1">
+            </td>
+            <td>
+                <input type="number" id="giaTri2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="cong()"> Addtion(+)</button>
+                <button type="button" onclick="tru()"> subtraction(-)</button>
+            </td>
+            <td>
+                <button type="button" onclick="nhan()"> Multiplication(x)</button>
+                <button type="button" onclick="chia()"> Division(/)</button>
+            </td>
+        </tr>
     </form>
-  </table>
+</table>
 
 <script>
-  function cong(){
-    let a=parseInt(document.getElementById('giaTri1').value);
-    let b=parseInt(document.getElementById('giaTri2').value);
-    let c=a +b
-    document.write('ketqua='+c)
-  }
-  function tru(){
-    let a=parseInt(document.getElementById('giaTri1').value);
-    let b=parseInt(document.getElementById('giaTri2').value);
-    let c=a-b
-    document.write('ketqua='+c)
-  }
-  function nhan(){
-    let a=parseInt(document.getElementById('giaTri1').value);
-    let b=parseInt(document.getElementById('giaTri2').value);
-    let c=a*b
-    document.write('ketqua='+c)
-  }
-  function chia(){
-    let a=parseInt(document.getElementById('giaTri1').value);
-    let b=parseInt(document.getElementById('giaTri2').value);
-    let c=a/b
-    document.write('ketqua='+c)
-  }
+    function cong() {
+        let a = parseInt(document.getElementById('giaTri1').value);
+        let b = parseInt(document.getElementById('giaTri2').value);
+        let c = a + b
+        document.write('ketqua=' + c)
+    }
 
+    function tru() {
+        let a = parseInt(document.getElementById('giaTri1').value);
+        let b = parseInt(document.getElementById('giaTri2').value);
+        let c = a - b
+        document.write('ketqua=' + c)
+    }
 
+    function nhan() {
+        let a = parseInt(document.getElementById('giaTri1').value);
+        let b = parseInt(document.getElementById('giaTri2').value);
+        let c = a * b
+        document.write('ketqua=' + c)
+    }
+
+    function chia() {
+        let a = parseInt(document.getElementById('giaTri1').value);
+        let b = parseInt(document.getElementById('giaTri2').value);
+        let c = a / b
+        document.write('ketqua=' + c)
+    }
 
 
 </script>

@@ -5,36 +5,41 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        class Rectangle{
-            constructor(dai,rong) {
-                this.dai = dai;
-                this.rong = rong;
-            }
-            getDai(){
-                return this.dai;
-            }
-            getRong(){
-                return this.rong;
-            }
-            getDienTich(){
-                return this.rong * this.dai;
-            }
-            getChuVi(){
-                return (this.dai+this.rong) *2;
-            }
+<script>
+    class Rectangle {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
         }
-        let hinhChuNhat = new Rectangle(4,6);
-        let chieuDai = hinhChuNhat.getDai();
-        let chieuRong = hinhChuNhat.getRong();
-        let chuVi = hinhChuNhat.getChuVi();
-        let dienTich = hinhChuNhat.getDienTich();
-        document.write('chu vi : '+chuVi+'<br>');
-        document.write('dien tich : '+ dienTich)
 
-        document.write("<br><canvas id=\"canvasId\" width=chieuDai height=chieuRong style=\"border:1px solid #c3c3c3;\"></canvas>")
-        let context = document.getElementById("canvasId").getContext("3d")
-    </script>
+        getDai() {
+            return this.dai;
+        }
+
+        getRong() {
+            return this.rong;
+        }
+
+        getDienTich() {
+            return this.rong * this.dai;
+        }
+
+        getChuVi() {
+            return (this.dai + this.rong) * 2;
+        }
+    }
+
+    let hinhChuNhat = new Rectangle(4, 6);
+    let chieuDai = hinhChuNhat.getDai();
+    let chieuRong = hinhChuNhat.getRong();
+    let chuVi = hinhChuNhat.getChuVi();
+    let dienTich = hinhChuNhat.getDienTich();
+    document.write('chu vi : ' + chuVi + '<br>');
+    document.write('dien tich : ' + dienTich)
+
+    document.write("<br><canvas id=\"canvasId\" width=chieuDai height=chieuRong style=\"border:1px solid #c3c3c3;\"></canvas>")
+    let context = document.getElementById("canvasId").getContext("3d")
+</script>
 
 </body>
 </html>

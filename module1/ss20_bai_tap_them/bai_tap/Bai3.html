@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Câu 3: Viết hàm có tham số truyền vào là một mảng ,-->
+<!--tìm các số fibonaci có trong mảng(số này đã làm bài tập ở jame). -->
+<!--Hàm trả về 1 mảng số fibonaci được tìm thấy trong mảng ( Yêu cầu sắp xếp tăng dần).-->
+<!--Gợi ý đây là dãy số fibonaci: 0,1,1,2,3,5,8,13,21,…..-->
+<script>
+    let mangFionaci = [];
+    let f1 = 0;
+    let f2 = 1;
+    let fibonaci;
+    mangFionaci.push(f1);
+    mangFionaci.push(f2);
+    for (let i = 0;i<=20 ; i++) {
+        fibonaci = f1 + f2;
+        f1 = f2;
+        f2 = fibonaci;
+        mangFionaci.push(fibonaci);
+    }
+    function timSoFibonaci(arr){
+        let arrFibonaci =[];
+        for (let i = 0; i <mangFionaci.length ; i++) {
+            for (let j = 0; j <arr.length ; j++) {
+                if (arr[j] == mangFionaci[i]){
+                    arrFibonaci.push(arr[j]);
+                    arr[j] = '.';
+            }
+            }
+        }
+        // arrFibonaci.sort(function (a,b){return a-b});
+        return arrFibonaci;
+    }
+    let arr = [5,1,4,1,0,7,8,19,20,13,77,21];
+    document.write('mang fibonaci la : '+ timSoFibonaci(arr));
+
+</script>
+
+
+</body>
+</html>

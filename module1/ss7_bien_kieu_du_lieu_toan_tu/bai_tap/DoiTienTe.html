@@ -5,54 +5,54 @@
     <title>Ứng dụng chuyển đổi tiền tệ</title>
 </head>
 <body>
-    <table>
-        <form>
-            <tr>
-                <th>Amount</th>
-                <th>From Currency</th>
-                <th>To currency</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>
-                    <input type="number" id="giaTri"/>
-                </td>
-                <td>
-                    <select name="vndong" id="tienViet">
-                        <option value="VND">VietNam</option>
-                        <option value="USD">USD</option>
-                    </select>
-                </td>
-                <td>
-                    <select name="dola" id="tienDo">
-                        <option value="USD">USD</option>
-                        <option value="VND">VietNam</option>
-                    </select>
-                </td>
-                <td>
-                    <input type="button" onclick="convert()" value="Convert"/>
-                </td>
+<table>
+    <form>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" id="giaTri"/>
+            </td>
+            <td>
+                <select name="vndong" id="tienViet">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="dola" id="tienDo">
+                    <option value="USD">USD</option>
+                    <option value="VND">VietNam</option>
+                </select>
+            </td>
+            <td>
+                <input type="button" onclick="convert()" value="Convert"/>
+            </td>
 
 
-            </tr>
-        </form>
-    </table>
+        </tr>
+    </form>
+</table>
 <script>
 
-    function convert(){
-    let a= document.getElementById('giaTri').value;
-    let b= document.getElementById('tienViet').value;
-    let c= document.getElementById('tienDo').value;
+    function convert() {
+        let a = document.getElementById('giaTri').value;
+        let b = document.getElementById('tienViet').value;
+        let c = document.getElementById('tienDo').value;
 
         if (b === c)
-            document.write('ketqua'+a)
+            document.write('ketqua' + a)
 
 
-        if (b === "VND" && c=== "USD")
-            document.write('ketqua='+a/23000)
+        if (b === "VND" && c === "USD")
+            document.write('ketqua=' + a / 23000)
 
-          else
-            document.write('ketqua='+a*23000)
+        else
+            document.write('ketqua=' + a * 23000)
 
     }
 

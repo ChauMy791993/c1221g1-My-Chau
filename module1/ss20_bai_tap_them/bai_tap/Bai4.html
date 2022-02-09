@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Câu 4: Tạo một lớp tài khoản ngân hàng  có:-->
+<!-- - Thuộc tính:-->
+<!--+ Mã tài khoản (string)-->
+<!--+ Tên chủ tài khoản(string)-->
+<!--+ Tên ngân hàng (string)-->
+<!--+ Tổng tiền tài khoản (number).-->
+<!-- - Các phương thức getter và setter cho các thuộc tính-->
+<!-- - Phương thức  toString() : phương thức lấy các thông tin của đối tượng.-->
+<!-- -Yêu cầu: Viết chương trình quản lý  tài khoản  ngân hàng  với các chức năng sau;-->
+<!--+ Thêm mới 1 tài khoản ngân hàng-->
+<!--+ Hiển thị được danh sách tài khoản ngân hàng-->
+
+
+<script>
+  class TaiKhoanNganHang {
+    constructor(password,chuTaiKhoan,nganHang,tongTien) {
+        this.password = password;
+        this.chuTaiKhoan = chuTaiKhoan;
+        this.nganHang = nganHang;
+        this.tongTien = tongTien;
+    }
+    setPassword(password){
+        this.password = password;
+    }
+    setChuTaiKhoan(chuTaiKhoan){
+        this.chuTaiKhoan = chuTaiKhoan;
+    }
+      setNganHang(nganHang){
+          this.nganHang = nganHang;
+      }
+      setTongTien(tongTien){
+          this.tongTien = tongTien;
+      }
+      getPassword(){
+        return this.password;
+      }
+      getChuTaiKhoan(){
+          return this.chuTaiKhoan;
+      }
+      getNganHang(){
+          return this.nganHang;
+      }
+      getTongTien(){
+          return this.tongTien;
+      }
+      toString(){
+          return this.password +'<br>'+ this.chuTaiKhoan+'<br>'+this.nganHang+'<br>'+this.tongTien;
+      }
+  }
+  let taiKhoan1 = new TaiKhoanNganHang(12345,'chau my','techcombank',2000);
+  document.write(taiKhoan1.toString())
+
+</script>
+
+</body>
+</html>
