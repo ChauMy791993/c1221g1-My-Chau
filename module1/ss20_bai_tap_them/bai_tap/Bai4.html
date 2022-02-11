@@ -54,8 +54,15 @@
           return this.password +'<br>'+ this.chuTaiKhoan+'<br>'+this.nganHang+'<br>'+this.tongTien;
       }
   }
-  let taiKhoan1 = new TaiKhoanNganHang(12345,'chau my','techcombank',2000);
+  let taiKhoan1 = new TaiKhoanNganHang();
+  let taiKhoan2 = new TaiKhoanNganHang()
+  taiKhoan1.setPassword(12345);
+  taiKhoan1.setChuTaiKhoan('chau my');
+  taiKhoan1.setNganHang('techcombank');
+  taiKhoan1.setTongTien(2000);
   document.write(taiKhoan1.toString())
+
+
 
 </script>
 
